@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rochester&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@keyframes fallAndRotate {
+    0% {
+        top: 100px;
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 20px red) drop-shadow(0 0 40px purple) drop-shadow(0 0 60px yellow);
+    }
+    15% {
+        top: 80px;
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(30deg);
+    }
+    90% {
+        transform: rotate(360deg);
+        opacity: 0.5;
+    }
+    100% {
+        top: 92vh;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+body {
+    background-color: #252c38;
+}
+
+nav {
+    width: 100vw;
+    height: 8dvh;
+    background-color: #ecbd00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+h1{
+    font-family: "Rochester", serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.main {
+    height: 92dvh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    position: absolute;
+    top: -1000px;
+    animation: fallAndRotate 2s ease-in-out;
+}
+
+.hidden-button {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.visible-button {
+    opacity: 1;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    color: black;
+    background-color: #ea9f00;
+    border-radius: 5px;
+    font-size: large;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    color: black;
+    background-color: #ea9f00;
+    border-radius: 5px;
+    font-size: large;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+#stake-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;
+}
+
+label {
+    font-family: "Open Sans", serif;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 10px; /* Adds space between input and button */
+    width: 70px;
+    font-size: medium;
+    background-color: rgb(250, 250, 250);
+    border: none;
+    border-radius: 5px;
+}
+
+p{
+    font-family: "Open Sans", serif;
+    color: white;
+    font-size: large;
+
+}
